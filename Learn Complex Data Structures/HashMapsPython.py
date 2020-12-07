@@ -3,7 +3,7 @@ class HashMap:
     self.array_size = array_size
     self.array = [None for item in range(array_size)]
 
-  def hashFunc(self, key, count_collisions: int = 0) -> int:
+  def hashFunc(self, key, count_collisions: int = 0) -> int
     key_bytes = key.encode()
     hash_code = sum(key_bytes)
     return (hash_code + count_collisions) % self.array_size
